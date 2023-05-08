@@ -9,8 +9,8 @@ Feature: Testare functii website Vivino
     Then Click acceptare termeni si conditii
     Then Introducere adresa de email "radude1989@gmail.com"
     And Click buton Continue
-    Then Adaugare nume "Pal"
-    And Adaugare prenume "Radu"
+    Then Introducere nume "Pal"
+    And Introducere prenume "Radu"
     Then Adaugare parola "Parola12345"
     And Click buton Join Vivino
 

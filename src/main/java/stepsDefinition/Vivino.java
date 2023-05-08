@@ -89,15 +89,15 @@ import static java.lang.Thread.sleep;
             sleep(5000);
         }
 
-        @Then("Adaugare nume {string}")
-        public void adaugare_nume(String nume) throws InterruptedException {
+        @Then("Introducere nume {string}")
+        public void introducere_nume(String nume) throws InterruptedException {
             driver.findElement(By.xpath("//input[@data-testid='signupFormFirstName']"))
                     .sendKeys("Pal");
             sleep(5000);
         }
 
-        @And("Adaugare prenume {string}")
-        public void adaugare_prenume(String prenume) throws InterruptedException {
+        @And("Introducere prenume {string}")
+        public void introducere_prenume(String prenume) throws InterruptedException {
             driver.findElement(By.xpath("//input[@data-testid='signupFormLastName']"))
                     .sendKeys("Radu");
             sleep(5000);
