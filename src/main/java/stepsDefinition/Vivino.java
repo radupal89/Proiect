@@ -103,8 +103,8 @@ import static java.lang.Thread.sleep;
             sleep(5000);
         }
 
-        @Then("Adaugare parola {string}")
-        public void adaugare_parola(String parola) throws InterruptedException {
+        @Then("Introducem parola {string}")
+        public void introducem_parola(String parola) throws InterruptedException {
             driver.findElement(By.xpath("//input[@name='password']"))
                     .sendKeys("Parola12345");
             sleep(5000);
@@ -292,8 +292,8 @@ import static java.lang.Thread.sleep;
 
             driver.switchTo().defaultContent();
         }
-        @And("Introducere text {string}")
-        public void introducere_text(String text1) throws InterruptedException {
+        @And("Adaugare text {string}")
+        public void adaugare_text(String text1) throws InterruptedException {
             driver.switchTo().frame("forethought-chat");
             driver.findElement(By.xpath("//div[contains(@class, 'MuiInputBase-multiline')]//textarea[@id=':r0:']"))
                     .sendKeys("hello" + Keys.RETURN);

@@ -11,7 +11,7 @@ Feature: Testare functii website Vivino
     And Click buton Continue
     Then Introducere nume "Pal"
     And Introducere prenume "Radu"
-    Then Adaugare parola "Parola12345"
+    Then Introducem parola "Parola12345"
     And Click buton Join Vivino
 
 
